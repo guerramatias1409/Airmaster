@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomeFooter extends StatefulWidget {
   @override
@@ -46,7 +47,8 @@ class _HomeFooterState extends State<HomeFooter> {
                           decoration: BoxDecoration(
                               image: DecorationImage(
                                   fit: BoxFit.cover,
-                                  image: AssetImage('assets/Footer/footer.jpg')))),
+                                  image:
+                                      AssetImage('assets/Footer/footer.jpg')))),
                       SizedBox(width: 10),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -62,20 +64,36 @@ class _HomeFooterState extends State<HomeFooter> {
                               Container(
                                 height: 30,
                                 width: 30,
+                                decoration: BoxDecoration(
+                                borderRadius: BorderRadius.all(Radius.circular(3)),
                                 color: Colors.white,
+                                ),
+                                child: Center(
+                                  child: Icon(MdiIcons.facebook,
+                                      color: Color(0xFF5C6061)),
+                                ),
                               ),
                               SizedBox(width: 10),
                               Container(
-                                height: 30,
-                                width: 30,
-                                color: Colors.white,
-                              ),
+                                  height: 30,
+                                  width: 30,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.all(Radius.circular(8)),
+                                    color: Colors.white,
+                                  ),
+                                  child: Center(
+                                    child: Icon(MdiIcons.instagram,
+                                        color: Color(0xFF5C6061)),
+                                  )),
                               SizedBox(width: 10),
                               Container(
-                                height: 30,
-                                width: 30,
-                                color: Colors.white,
-                              )
+                                  height: 30,
+                                  width: 30,
+                                  color: Colors.white,
+                                  child: Center(
+                                    child: Icon(MdiIcons.youtube,
+                                        color: Color(0xFF5C6061)),
+                                  ))
                             ],
                           ),
                           SizedBox(height: 10),
