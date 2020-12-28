@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Airmaster',
+      title: 'Air Master | Windows and Doors | Puerto Rico',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
