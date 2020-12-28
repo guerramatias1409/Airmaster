@@ -41,7 +41,7 @@ class _CategoryItemState extends State<CategoryItem> {
                 width: 250,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        fit: BoxFit.contain, image: AssetImage(widget.image)))),
+                        fit: BoxFit.cover, image: AssetImage(widget.image)))),
             SizedBox(height: 5),
             Text(widget.comment,
                 style: TextStyle(

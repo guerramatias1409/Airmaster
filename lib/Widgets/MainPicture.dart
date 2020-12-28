@@ -15,7 +15,9 @@ class _MainPictureState extends State<MainPicture> {
         children: [
           Container(
             height: 450,
-            color: Colors.black,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: AssetImage('assets/Home/mainpicture.jpg')))
           ),
           Padding(
             padding: const EdgeInsets.only(left: 30),
