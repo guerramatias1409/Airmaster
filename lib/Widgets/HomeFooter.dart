@@ -111,7 +111,7 @@ class _HomeFooterState extends State<HomeFooter> {
                               icon: Icon(Icons.location_on, size: 12),
                               label: Text("San Juan",
                                   style: TextStyle(
-                                      fontSize: 12, color: Colors.white)),
+                                      fontSize: 14, color: Colors.white)),
                               onPressed: () {},
                             ),
                           ),
