@@ -14,7 +14,7 @@ class _HomeFooterState extends State<HomeFooter> {
         height: 300,
         color: Color(0xFF5C6061),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 10),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
