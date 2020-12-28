@@ -24,7 +24,7 @@ class _SquaredButtonState extends State<SquaredButton> {
               fontWeight: FontWeight.w300,
             color: Colors.white
           ),),
-        shape: RoundedRectangleBorder(),
+        shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black, width: 0.8)),
       ),
     );
   }
