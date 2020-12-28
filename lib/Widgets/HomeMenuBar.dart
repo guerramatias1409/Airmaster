@@ -17,10 +17,13 @@ class _HomeMenuBarState extends State<HomeMenuBar> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("AIR MASTER",
-              style: TextStyle(
-                fontSize: 30
-              ),),
+              Container(
+                width: 250,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        fit: BoxFit.contain,
+                        image: AssetImage('assets/logo.png'))),
+              ),
               Row(
                 children: [
                   Text("WINDOWS"),

@@ -1,3 +1,4 @@
+import 'package:airmaster/Widgets/FeatureProductItem.dart';
 import 'package:flutter/material.dart';
 
 class HomeFeatureProducts extends StatefulWidget {
@@ -26,9 +27,17 @@ class _HomeFeatureProductsState extends State<HomeFeatureProducts> {
                 ),
               ),
             ),
-            Container(height: 250,color: Colors.red),
+            FeatureProductItem(
+              title: "CASEMENT WINDOWS",
+              content: "It is characterized by having a system of integrated sight unseen hinges. It also has a hardware system that allows a better seal. Their panels open outward.",
+              image: 'assets/Home/featurecasement.jpg',
+            ),
             SizedBox(height: 15),
-            Container(height: 250,color: Colors.blue)
+            FeatureProductItem(
+              title: "GLASS RAILINGS",
+              content: "Having a second level, a balcony or terrace means having more freedom in your space. A railing or glass railings will allow you to maintain a fresh and transparent view.",
+              image: 'assets/Home/featureglass.jpg',
+            )
           ],
         ),
       ),

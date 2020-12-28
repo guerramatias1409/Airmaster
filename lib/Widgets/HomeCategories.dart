@@ -16,20 +16,24 @@ class _HomeCategoriesState extends State<HomeCategories> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             CategoryItem(title: "WINDOWS",
-              color: Colors.red,
-              comment: "Lorem ipsum dolor sit amet consectetur adipiscing elit, diam placerat mollis taciti per lectus pellentesque, suspendisse commodo pharetra augue conubia aenean. Taciti nisl phasellus habitasse hac vehicula nam ac luctus, convallis iaculis lobortis nibh magna ligula accumsan, per libero egestas lacus diam litora varius."
+              image: 'assets/Home/categorywindows.jpg',
+              comment: "HIGH PERFORMANCE WINDOWS",
+              subcomment: "Impact and Hurricane Resistance Certification",
             ),
             CategoryItem(title: "DOORS",
-                color: Colors.blue,
-                comment: "Lorem ipsum dolor sit amet consectetur adipiscing elit, diam placerat mollis taciti per lectus pellentesque, suspendisse commodo pharetra augue conubia aenean. Taciti nisl phasellus habitasse hac vehicula nam ac luctus, convallis iaculis lobortis nibh magna ligula accumsan, per libero egestas lacus diam litora varius."
+                image: 'assets/Home/categorydoors.jpg',
+                comment: "HIGH PERFORMANCE WINDOWS",
+                subcomment: "Impact and Hurricane Resistance Certification"
             ),
             CategoryItem(title: "RAILINGS",
-                color: Colors.green,
-                comment: "Lorem ipsum dolor sit amet consectetur adipiscing elit, diam placerat mollis taciti per lectus pellentesque, suspendisse commodo pharetra augue conubia aenean. Taciti nisl phasellus habitasse hac vehicula nam ac luctus, convallis iaculis lobortis nibh magna ligula accumsan, per libero egestas lacus diam litora varius."
+                image: 'assets/Home/categoryrailings.jpg',
+                comment: "HIGH PERFORMANCE WINDOWS",
+                subcomment: "Impact and Hurricane Resistance Certification"
             ),
             CategoryItem(title: "SHOWERS",
-                color: Colors.yellow,
-                comment: "Lorem ipsum dolor sit amet consectetur adipiscing elit, diam placerat mollis taciti per lectus pellentesque, suspendisse commodo pharetra augue conubia aenean. Taciti nisl phasellus habitasse hac vehicula nam ac luctus, convallis iaculis lobortis nibh magna ligula accumsan, per libero egestas lacus diam litora varius."
+                image: 'assets/Home/categoryshowers.jpg',
+                comment: "HIGH PERFORMANCE WINDOWS",
+                subcomment: "Impact and Hurricane Resistance Certification"
             )
 
           ],
