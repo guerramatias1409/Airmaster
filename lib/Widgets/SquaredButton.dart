@@ -15,7 +15,7 @@ class _SquaredButtonState extends State<SquaredButton> {
     return Material(
       child: FloatingActionButton(
         onPressed: () {},
-        backgroundColor: Colors.green,
+        backgroundColor: Color(0xFF48A742),
         child: Text(
           widget.text,
           textAlign: TextAlign.center,

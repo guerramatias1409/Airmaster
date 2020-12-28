@@ -89,7 +89,7 @@ class _HomeFooterState extends State<HomeFooter> {
                               shape: RoundedRectangleBorder(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(0))),
-                              backgroundColor: Colors.green,
+                              backgroundColor: Color(0xFF48A742),
                               icon: Icon(Icons.location_on, size: 12),
                               label: Text("San Juan",
                                   style: TextStyle(

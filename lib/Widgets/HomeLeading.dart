@@ -20,7 +20,7 @@ class _HomeLeadingState extends State<HomeLeading> {
             children: [
               Text("Puerto Rico",
                 style: TextStyle(
-                    color: Colors.green,
+                    color: Color(0xFF48A742),
                     fontSize: 12
                 ),),
               HomeLeadingDivider(),
@@ -47,7 +47,7 @@ class _HomeLeadingState extends State<HomeLeading> {
                       shape: RoundedRectangleBorder (
                           borderRadius: BorderRadius.all (
                               Radius.circular ( 0 ) ) ) ,
-                      backgroundColor:  Colors.green ,
+                      backgroundColor:  Color(0xFF48A742) ,
                       icon: Icon ( Icons.location_on ) ,
                       label: Text ("WHERE TO BUY" ,
                           style: TextStyle (
