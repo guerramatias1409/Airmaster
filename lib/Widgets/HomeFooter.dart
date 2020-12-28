@@ -11,7 +11,7 @@ class _HomeFooterState extends State<HomeFooter> {
     return Material(
       child: Container(
         height: 300,
-        color: Colors.black.withOpacity(0.7),
+        color: Color(0xFF5C6061),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Column(

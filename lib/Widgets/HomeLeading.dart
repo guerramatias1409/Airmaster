@@ -12,7 +12,7 @@ class _HomeLeadingState extends State<HomeLeading> {
     return Material(
       child: Container(
         height: 35,
-        color: Colors.black.withOpacity(0.7),
+        color: Color(0xFF5C6061),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Row(

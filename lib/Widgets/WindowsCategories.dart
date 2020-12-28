@@ -87,7 +87,7 @@ class _WindowsCategoriesState extends State<WindowsCategories> {
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
-                                    color: Colors.black.withOpacity(0.7)
+                                    color: Color(0xFF5C6061)
                                 ),
                               ),
                               SizedBox(height: 12),
@@ -96,7 +96,7 @@ class _WindowsCategoriesState extends State<WindowsCategories> {
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
-                                    color: Colors.black.withOpacity(0.7)
+                                    color: Color(0xFF5C6061)
                                 ),
                               ),
                               SizedBox(height: 15),
@@ -105,7 +105,7 @@ class _WindowsCategoriesState extends State<WindowsCategories> {
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
-                                    color: Colors.black.withOpacity(0.7)
+                                    color: Color(0xFF5C6061)
                                 ),
                               ),
                               SizedBox(height: 15),
@@ -114,7 +114,7 @@ class _WindowsCategoriesState extends State<WindowsCategories> {
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
-                                    color: Colors.black.withOpacity(0.7)
+                                    color: Color(0xFF5C6061)
                                 ),
                               ),
                               SizedBox(height: 15),
@@ -123,7 +123,7 @@ class _WindowsCategoriesState extends State<WindowsCategories> {
                                 style: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w400,
-                                    color: Colors.black.withOpacity(0.7)
+                                    color: Color(0xFF5C6061)
                                 ),
                               )
 

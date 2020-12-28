@@ -31,7 +31,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
           Flexible(
             flex: 1,
             child: Container(
-              color: Colors.black.withOpacity(0.7),
+              color: Color(0xFF5C6061),
               width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.only(left: 20),
