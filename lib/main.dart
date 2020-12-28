@@ -1,4 +1,6 @@
+import 'package:airmaster/Screens/DoorsScreen.dart';
 import 'package:airmaster/Screens/Home.dart';
+import 'package:airmaster/Screens/WindowsScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      routes: {
+        '/doors': (BuildContext context) => new DoorsScreen(),
+        '/windows': (BuildContext context) => new WindowsScreen(),
+      },
       home: Home(),
     );
   }

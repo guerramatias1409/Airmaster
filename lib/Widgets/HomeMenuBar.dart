@@ -26,9 +26,23 @@ class _HomeMenuBarState extends State<HomeMenuBar> {
               ),
               Row(
                 children: [
-                  Text("WINDOWS"),
+                  InkWell(
+                      highlightColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      onTap: () {
+                        Navigator.pushNamed(context, '/windows');
+                      },
+                      child: Text("WINDOWS")),
                   SizedBox(width: 30),
-                  Text("DOORS"),
+                  InkWell(
+                      highlightColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      splashColor: Colors.transparent,
+                      onTap: () {
+                        Navigator.pushNamed(context, '/doors');
+                      },
+                      child: Text("DOORS")),
                   SizedBox(width: 30),
                   Text("RAILINGS & SHOWERS"),
                   SizedBox(width: 30),

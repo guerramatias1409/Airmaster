@@ -14,6 +14,7 @@ class _SquaredButtonState extends State<SquaredButton> {
   Widget build(BuildContext context) {
     return Material(
       child: FloatingActionButton(
+        heroTag: null,
         onPressed: () {},
         backgroundColor: Color(0xFF48A742),
         child: Text(
