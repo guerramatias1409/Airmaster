@@ -21,9 +21,9 @@ class _CategoryItemState extends State<CategoryItem> {
       hoverColor: Colors.transparent,
       splashColor: Colors.transparent,
       onTap: (){
-        if(widget.route != null){
-          Navigator.pushNamed(context, widget.route);
-        }
+        // if(widget.route != null){
+        //   Navigator.pushNamed(context, widget.route);
+        // }
       },
       child: Container(
         width: 250,

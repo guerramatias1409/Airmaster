@@ -31,26 +31,72 @@ class _HomeMenuBarState extends State<HomeMenuBar> {
                       hoverColor: Colors.transparent,
                       splashColor: Colors.transparent,
                       onTap: () {
-                        Navigator.pushNamed(context, '/windows');
+                        //Navigator.pushNamed(context, '/windows');
                       },
-                      child: Text("WINDOWS")),
+                      child: Text("WINDOWS",
+                      style: TextStyle(
+                        color: Color(0xFF5C6061).withOpacity(0.6)
+                      ),)),
                   SizedBox(width: 30),
                   InkWell(
                       highlightColor: Colors.transparent,
                       hoverColor: Colors.transparent,
                       splashColor: Colors.transparent,
                       onTap: () {
-                        Navigator.pushNamed(context, '/doors');
+                        //Navigator.pushNamed(context, '/doors');
                       },
-                      child: Text("DOORS")),
+                      child: Text("DOORS",
+                          style: TextStyle(
+                              color: Color(0xFF5C6061).withOpacity(0.6)
+                          ))),
                   SizedBox(width: 30),
-                  Text("RAILINGS & SHOWERS"),
+                  InkWell(
+                    highlightColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                    },
+                    child: Text("RAILINGS & SHOWERS",
+                        style: TextStyle(
+                            color: Color(0xFF5C6061).withOpacity(0.6)
+                        )),
+                  ),
                   SizedBox(width: 30),
-                  Text("ABOUT US"),
+                  InkWell(
+                    highlightColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                    },
+                    child: Text("ABOUT US",
+                        style: TextStyle(
+                            color: Color(0xFF5C6061).withOpacity(0.6)
+                        )),
+                  ),
                   SizedBox(width: 30),
-                  Text("OUR GLASS"),
+                  InkWell(
+                    highlightColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                    },
+                    child: Text("OUR GLASS",
+                        style: TextStyle(
+                            color: Color(0xFF5C6061).withOpacity(0.6)
+                        )),
+                  ),
                   SizedBox(width: 30),
-                  Text("CONTACT US"),
+                  InkWell(
+                    highlightColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    splashColor: Colors.transparent,
+                    onTap: () {
+                    },
+                    child: Text("CONTACT US",
+                        style: TextStyle(
+                            color: Color(0xFF5C6061).withOpacity(0.6)
+                        )),
+                  ),
                 ],
               )
             ],
