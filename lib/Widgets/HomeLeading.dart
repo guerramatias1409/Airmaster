@@ -11,7 +11,7 @@ class _HomeLeadingState extends State<HomeLeading> {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        height: 35,
+        height: 40,
         color: Color(0xFF5C6061),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
