@@ -14,44 +14,44 @@ class _HomeLeadingState extends State<HomeLeading> {
         height: 40,
         color: Color(0xFF5C6061),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 42.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Text("Puerto Rico",
                 style: TextStyle(
                     color: Color(0xFF48A742),
-                    fontSize: 12
+                    fontSize: 13
                 ),),
               HomeLeadingDivider(),
               Text("Florida, US Market",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 12
+                    fontSize: 13
                 ),),
               HomeLeadingDivider(),
               Text("Punta Cana, DR Market",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 12
+                    fontSize: 13
                 ),),
-              HomeLeadingDivider(),
+              SizedBox(width: 10),
               //TODO si dejo unicamente el boton, el separador de la derecha no se ve. Por que??
               Row(
                 children: [
                   Container(
-                    padding: EdgeInsets.symmetric(vertical: 2),
-                    width: 150,
+                    padding: EdgeInsets.symmetric(vertical: 4),
+                    width: 116,
                     child: FloatingActionButton.extended (
                       heroTag: 'whereToBuy' ,
                       shape: RoundedRectangleBorder (
                           borderRadius: BorderRadius.all (
                               Radius.circular ( 0 ) ) ) ,
                       backgroundColor:  Color(0xFF48A742) ,
-                      icon: Icon ( Icons.location_on ) ,
+                      icon: Icon ( Icons.location_on,size: 16,) ,
                       label: Text ("WHERE TO BUY" ,
                           style: TextStyle (
-                              fontSize: 12 ,
+                              fontSize: 10 ,
                               color: Colors.white ,
                               fontWeight: FontWeight.bold ) ) ,
                       onPressed: () {
@@ -65,19 +65,25 @@ class _HomeLeadingState extends State<HomeLeading> {
               Text("For Professionals",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 12
+                    fontSize: 13
                 ),),
               HomeLeadingDivider(),
-              Text("Couriers",
+              Text("Support",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 12
+                    fontSize: 13
+                ),),
+              HomeLeadingDivider(),
+              Text("Carrers",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 13
                 ),),
               HomeLeadingDivider(),
               Text("Certifications / Resources",
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 12
+                fontSize: 13
               ),),
             ],
           ),

@@ -10,14 +10,14 @@ class _HomeLeadingDividerState extends State<HomeLeadingDivider> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SizedBox(width: 20),
+        SizedBox(width: 25),
         VerticalDivider(
           endIndent: 10,
           indent: 10,
           width: 2,
           color: Colors.white,
         ),
-        SizedBox(width: 20),
+        SizedBox(width: 25),
       ],
     );
   }
