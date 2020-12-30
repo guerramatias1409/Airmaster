@@ -20,17 +20,20 @@ class _HomeFooterState extends State<HomeFooter> {
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Container(),
                   Text(
-                    "AIR MASTER",
-                    style: TextStyle(fontSize: 30, color: Colors.white),
-                  )
-                ],
-              ),
-              Text(
-                "San Juan Showroom",
-                style: TextStyle(fontSize: 16, color: Colors.white),
+                    "San Juan Showroom",
+                    style: TextStyle(fontSize: 16, color: Colors.white),
+                  ),
+                  Container(
+                    height: 70,
+                    width: 250,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            fit: BoxFit.cover,
+                            image: AssetImage('assets/whitelogo.png'))),
+                  )                ],
               ),
               SizedBox(height: 10),
               Row(
