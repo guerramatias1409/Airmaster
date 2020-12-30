@@ -13,19 +13,23 @@ class _SquaredButtonState extends State<SquaredButton> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: FloatingActionButton(
-        heroTag: null,
-        onPressed: () {},
-        backgroundColor: Color(0xFF48A742),
-        child: Text(
-          widget.text,
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w300,
-            color: Colors.white
-          ),),
-        shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black, width: 0.8)),
+      child: Container(
+        width: 120,
+        height: 120,
+        child: FloatingActionButton(
+          heroTag: null,
+          onPressed: () {},
+          backgroundColor: Color(0xFF48A742),
+          child: Text(
+            widget.text,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontSize: 33,
+                fontWeight: FontWeight.w300,
+              color: Colors.white
+            ),),
+          shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black, width: 0.8)),
+        ),
       ),
     );
   }

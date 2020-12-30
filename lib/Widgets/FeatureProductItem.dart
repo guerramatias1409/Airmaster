@@ -20,7 +20,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
       child: Row(
         children: [
           Flexible(
-            flex: 2,
+            flex: 9,
             child: Container(
                 decoration: BoxDecoration(
                     image: DecorationImage(
@@ -29,19 +29,19 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
             ),
           ),
           Flexible(
-            flex: 1,
+            flex: 6,
             child: Container(
               color: Color(0xFF5C6061),
               width: double.infinity,
               child: Padding(
-                padding: const EdgeInsets.only(left: 20),
+                padding: const EdgeInsets.only(left: 48),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(widget.title,
                       style: TextStyle(
-                          fontSize: 30,
+                          fontSize: 46,
                           letterSpacing: 1,
                           fontWeight: FontWeight.w600,
                         color: Colors.white
@@ -50,10 +50,10 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
                       height: 10,
                     ),
                     Container(
-                      constraints: BoxConstraints(maxWidth: 400),
+                      constraints: BoxConstraints(maxWidth: 450),
                       child: Text(widget.content,
                         style: TextStyle(
-                            fontSize: 14,
+                            fontSize: 22,
                             color: Colors.white,
                             fontWeight: FontWeight.w200
                         ),
