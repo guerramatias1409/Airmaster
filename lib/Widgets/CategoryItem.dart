@@ -26,31 +26,31 @@ class _CategoryItemState extends State<CategoryItem> {
         // }
       },
       child: Container(
-        width: 250,
+        width: 310,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               widget.title,
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 28),
             ),
             SizedBox(height: 5),
             Container(
-                height: 250,
-                width: 250,
+                height: 310,
+                width: 310,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         fit: BoxFit.cover, image: AssetImage(widget.image)))),
             SizedBox(height: 5),
             Text(widget.comment,
                 style: TextStyle(
-                  fontSize: 16,
+                  fontSize: 20,
                 ),
                 maxLines: 1),
             Text(widget.subcomment,
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 18,
                 ),
                 maxLines: 2)
           ],

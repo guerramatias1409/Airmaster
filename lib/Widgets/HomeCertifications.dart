@@ -17,17 +17,17 @@ class _HomeCertificationsState extends State<HomeCertifications> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: Container(
-                height: 30,
+                height: 113,
                 child: Center(
                   child: Text(
                     "CERTIFICATIONS",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 50),
                   ),
                 ),
               ),
             ),
             Container(
-              height: 300,
+              height: 470,
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 40),
                 child: Row(

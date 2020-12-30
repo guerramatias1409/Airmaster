@@ -12,7 +12,7 @@ class _HomeCategoriesState extends State<HomeCategories> {
     return Material(
       color: Colors.white,
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 25),
+        padding: const EdgeInsets.symmetric(vertical: 22),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [

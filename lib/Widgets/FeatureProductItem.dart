@@ -16,7 +16,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300,
+      height: 505,
       child: Row(
         children: [
           Flexible(

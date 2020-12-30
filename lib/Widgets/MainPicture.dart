@@ -14,7 +14,7 @@ class _MainPictureState extends State<MainPicture> {
         alignment: AlignmentDirectional.centerStart,
         children: [
           Container(
-            height: 450,
+            height: 830,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('assets/Home/mainpicture.jpg')))

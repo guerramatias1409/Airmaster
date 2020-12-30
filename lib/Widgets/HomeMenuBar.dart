@@ -10,7 +10,7 @@ class _HomeMenuBarState extends State<HomeMenuBar> {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        height: 70,
+        height: 115,
         color: Colors.white,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 40.0),

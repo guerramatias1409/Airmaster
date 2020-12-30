@@ -17,12 +17,11 @@ class _HomeFeatureProductsState extends State<HomeFeatureProducts> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: Container(
-                height: 30,
+                height: 55,
                 child: Center(
                   child: Text("FEATURE PRODUCTS",
                   style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold
+                    fontSize: 50,
                   ),),
                 ),
               ),
@@ -32,7 +31,7 @@ class _HomeFeatureProductsState extends State<HomeFeatureProducts> {
               content: "It is characterized by having a system of integrated sight unseen hinges. It also has a hardware system that allows a better seal. Their panels open outward.",
               image: 'assets/Home/featurecasement.jpg',
             ),
-            SizedBox(height: 15),
+            SizedBox(height: 31),
             FeatureProductItem(
               title: "GLASS RAILINGS",
               content: "Having a second level, a balcony or terrace means having more freedom in your space. A railing or glass railings will allow you to maintain a fresh and transparent view.",

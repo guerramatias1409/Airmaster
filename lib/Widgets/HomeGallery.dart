@@ -17,11 +17,11 @@ class _HomeGalleryState extends State<HomeGallery> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 15),
               child: Container(
-                height: 30,
+                height: 130,
                 child: Center(
                   child: Text(
                     "GALLERY",
-                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                    style: TextStyle(fontSize: 50),
                   ),
                 ),
               ),
