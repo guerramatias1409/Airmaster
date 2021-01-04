@@ -1,5 +1,6 @@
 import 'package:airmaster/Controllers/HomeCategoriesController.dart';
 import 'package:airmaster/Controllers/HomeCertificationsController.dart';
+import 'package:airmaster/Controllers/HomeFeatureProductsController.dart';
 import 'package:airmaster/Controllers/HomeLeadingController.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -28,6 +29,10 @@ class GenerateControllers extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => HomeCertificationsController(),
+          lazy: true,
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HomeFeatureProductsController(),
           lazy: true,
         ),
 

@@ -1,14 +1,11 @@
 import 'package:airmaster/Widgets/FeatureProductItem.dart';
 import 'package:flutter/material.dart';
+import 'package:airmaster/Controllers/HomeFeatureProductsController.dart';
+import 'package:airmaster/responsive/view.dart';
 
-class HomeFeatureProducts extends StatefulWidget {
+class HomeFeatureProductsDesktopView extends View<HomeFeatureProductsController>{
   @override
-  _HomeFeatureProductsState createState() => _HomeFeatureProductsState();
-}
-
-class _HomeFeatureProductsState extends State<HomeFeatureProducts> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,HomeFeatureProductsController controller) {
     return Material(
       child: Container(
         color: Colors.white,
@@ -20,9 +17,9 @@ class _HomeFeatureProductsState extends State<HomeFeatureProducts> {
                 height: 55,
                 child: Center(
                   child: Text("FEATURE PRODUCTS",
-                  style: TextStyle(
-                    fontSize: 50,
-                  ),),
+                    style: TextStyle(
+                      fontSize: 50,
+                    ),),
                 ),
               ),
             ),
