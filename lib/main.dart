@@ -1,10 +1,12 @@
+import 'package:airmaster/Responsive/GenerateControllers.dart';
 import 'package:airmaster/Screens/DoorsScreen.dart';
 import 'package:airmaster/Screens/Home.dart';
 import 'package:airmaster/Screens/WindowsScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  print("entra a main");
+  runApp(GenerateControllers(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {

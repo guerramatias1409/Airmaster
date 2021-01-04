@@ -1,5 +1,5 @@
 import 'package:airmaster/Responsive/platform_layout.dart';
-import 'file:///C:/Users/BringtBlack/Desktop/Matias/airmaster/lib/Utils/enums.dart';
+import 'package:airmaster/Utils/enums.dart';
 import 'package:flutter/material.dart';
 
 class PlatformFunction{
