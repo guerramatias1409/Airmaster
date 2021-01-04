@@ -1,6 +1,6 @@
 import 'package:airmaster/Views/HomeFooter/HomeFooterBase.dart';
 import 'package:airmaster/Views/HomeLeading/HomeLeadingBase.dart';
-import 'package:airmaster/Widgets/HomeMenuBar.dart';
+import 'package:airmaster/Views/HomeMenuBar/HomeMenuBarBase.dart';
 import 'package:airmaster/Widgets/WindowsCategories.dart';
 import 'package:airmaster/Widgets/WindowsMainPicture.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class _WindowsScreenState extends State<WindowsScreen> {
       child: Column(
         children: [
           HomeLeadingBase(),
-          HomeMenuBar(),
+          HomeMenuBarBase(),
           WindowsMainPicture(),
           WindowsCategories(),
           HomeFooterBase()

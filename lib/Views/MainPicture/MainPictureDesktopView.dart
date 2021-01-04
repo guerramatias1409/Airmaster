@@ -1,20 +1,17 @@
 import 'package:airmaster/Widgets/SquaredButton.dart';
 import 'package:flutter/material.dart';
+import 'package:airmaster/Controllers/MainPictureController.dart';
+import 'package:airmaster/responsive/view.dart';
 
-class MainPicture extends StatefulWidget {
+class MainPictureDesktopView extends View<MainPictureController>{
   @override
-  _MainPictureState createState() => _MainPictureState();
-}
-
-class _MainPictureState extends State<MainPicture> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,MainPictureController controller) {
     return Material(
       child: Stack(
         alignment: AlignmentDirectional.centerStart,
         children: [
           Container(
-            height: 830,
+              height: 830,
               decoration: BoxDecoration(
                   image: DecorationImage(
                       fit: BoxFit.cover, image: AssetImage('assets/Home/mainpicture.jpg')))
@@ -27,8 +24,8 @@ class _MainPictureState extends State<MainPicture> {
                 Text(
                   "HIGH PERFORMANCE",
                   style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.white,
+                      fontSize: 25,
+                      color: Colors.white,
                       fontWeight: FontWeight.w300
                   ),
                 ),

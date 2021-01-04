@@ -4,8 +4,8 @@ import 'package:airmaster/Views/HomeFeatureProducts/HomeFeatureProductsBase.dart
 import 'package:airmaster/Views/HomeFooter/HomeFooterBase.dart';
 import 'package:airmaster/Views/HomeGallery/HomeGalleryBase.dart';
 import 'package:airmaster/Views/HomeLeading/HomeLeadingBase.dart';
-import 'package:airmaster/Widgets/HomeMenuBar.dart';
-import 'package:airmaster/Widgets/MainPicture.dart';
+import 'package:airmaster/Views/HomeMenuBar/HomeMenuBarBase.dart';
+import 'package:airmaster/Views/MainPicture/MainPictureBase.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
@@ -23,8 +23,8 @@ class _HomeState extends State<Home> {
             Column(
               children: [
                 HomeLeadingBase(),
-                HomeMenuBar(),
-                MainPicture(),
+                HomeMenuBarBase(),
+                MainPictureBase(),
                 HomeCategoriesBase(),
                 HomeFeatureProductsBase(),
                 HomeCertificationsBase(),
