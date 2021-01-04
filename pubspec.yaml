@@ -31,6 +31,7 @@ dependencies:
   firebase: ^7.3.3
   cloud_firestore: ^0.14.4
   material_design_icons_flutter: 4.0.5755
+  provider: ^4.3.2+3
 
 dev_dependencies:
   flutter_test:
