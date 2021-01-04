@@ -2,8 +2,8 @@ import 'package:airmaster/Views/HomeCategories/HomeCategoriesBase.dart';
 import 'package:airmaster/Views/HomeCertifications/HomeCertificationsBase.dart';
 import 'package:airmaster/Views/HomeFeatureProducts/HomeFeatureProductsBase.dart';
 import 'package:airmaster/Views/HomeFooter/HomeFooterBase.dart';
+import 'package:airmaster/Views/HomeGallery/HomeGalleryBase.dart';
 import 'package:airmaster/Views/HomeLeading/HomeLeadingBase.dart';
-import 'package:airmaster/Widgets/HomeGallery.dart';
 import 'package:airmaster/Widgets/HomeMenuBar.dart';
 import 'package:airmaster/Widgets/MainPicture.dart';
 import 'package:flutter/material.dart';
@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
                 HomeCategoriesBase(),
                 HomeFeatureProductsBase(),
                 HomeCertificationsBase(),
-                HomeGallery(),
+                HomeGalleryBase(),
                 HomeFooterBase()
               ],
             ),

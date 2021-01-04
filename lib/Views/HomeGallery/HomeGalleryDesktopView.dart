@@ -1,14 +1,12 @@
 import 'package:airmaster/Widgets/GalleryItem.dart';
 import 'package:flutter/material.dart';
+import 'package:airmaster/Controllers/HomeGalleryController.dart';
+import 'package:airmaster/responsive/view.dart';
 
-class HomeGallery extends StatefulWidget {
-  @override
-  _HomeGalleryState createState() => _HomeGalleryState();
-}
 
-class _HomeGalleryState extends State<HomeGallery> {
+class HomeGalleryDesktopView extends View<HomeGalleryController>{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,HomeGalleryController controller) {
     return Material(
       child: Container(
         color: Colors.white,
