@@ -31,35 +31,36 @@ class HomeCertificationsDesktopView extends View<HomeCertificationsController>{
                 child: Row(
                   children: [
                     Flexible(
-                      flex: 1,
+                      flex: 2,
                       child: Container(
                         color: Colors.white,
                         width: double.infinity,
                         child: Padding(
-                          padding: const EdgeInsets.only(left: 20),
+                          padding: const EdgeInsets.only(left: 60),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
+                              SizedBox(height: 50),
                               Text(
                                 "IMPACT TEST VIDEO DEMONSTRATION",
                                 style: TextStyle(
-                                    fontSize: 30, fontWeight: FontWeight.bold),
+                                    fontSize: 46, fontWeight: FontWeight.bold,),
                               ),
                               SizedBox(
                                 height: 10,
                               ),
                               Container(
-                                constraints: BoxConstraints(maxWidth: 350),
+                                constraints: BoxConstraints(maxWidth: 400),
                                 child: Text(
                                   "Testing process to meet the Miami Dade County regulations",
                                   style: TextStyle(
-                                      fontSize: 14,
+                                      fontSize: 22,
                                       fontWeight: FontWeight.w400),
                                 ),
                               ),
                               SizedBox(
-                                height: 15,
+                                height: 40,
                               ),
                               SquaredButton(
                                 text: "VIEW\nVIDEO",
@@ -70,7 +71,7 @@ class HomeCertificationsDesktopView extends View<HomeCertificationsController>{
                       ),
                     ),
                     Flexible(
-                      flex: 2,
+                      flex: 3,
                       child: Container(
                         decoration: BoxDecoration(
                             image: DecorationImage(
