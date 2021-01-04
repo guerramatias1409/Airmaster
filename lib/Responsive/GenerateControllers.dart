@@ -1,3 +1,4 @@
+import 'package:airmaster/Controllers/HomeCategoriesController.dart';
 import 'package:airmaster/Controllers/HomeLeadingController.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -19,7 +20,12 @@ class GenerateControllers extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => HomeLeadingController(),
           lazy: true,
-        )
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HomeCategoriesController(),
+          lazy: true,
+        ),
+
       ],
       child: child,
     );

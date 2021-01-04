@@ -1,14 +1,11 @@
 import 'package:airmaster/Widgets/CategoryItem.dart';
 import 'package:flutter/material.dart';
+import 'package:airmaster/Controllers/HomeCategoriesController.dart';
+import 'package:airmaster/responsive/view.dart';
 
-class HomeCategories extends StatefulWidget {
+class HomeCategoriesDesktopView extends View<HomeCategoriesController>{
   @override
-  _HomeCategoriesState createState() => _HomeCategoriesState();
-}
-
-class _HomeCategoriesState extends State<HomeCategories> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,HomeCategoriesController controller) {
     return Material(
       color: Colors.white,
       child: Padding(
