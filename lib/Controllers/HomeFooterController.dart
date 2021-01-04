@@ -4,6 +4,5 @@ class HomeFooterController extends ChangeNotifier {
 
   void init() {
 
-    notifyListeners();
   }
 }

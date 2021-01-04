@@ -4,6 +4,5 @@ class HomeMenuBarController extends ChangeNotifier {
 
   void init() {
 
-    notifyListeners();
   }
 }

@@ -4,6 +4,5 @@ class HomeFeatureProductsController extends ChangeNotifier {
 
   void init() {
 
-    notifyListeners();
   }
 }

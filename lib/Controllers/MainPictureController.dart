@@ -4,6 +4,5 @@ class MainPictureController extends ChangeNotifier {
 
   void init() {
 
-    notifyListeners();
   }
 }

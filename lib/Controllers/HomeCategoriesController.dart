@@ -4,6 +4,5 @@ class HomeCategoriesController extends ChangeNotifier {
 
   void init() {
 
-    notifyListeners();
   }
 }

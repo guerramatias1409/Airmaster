@@ -4,6 +4,5 @@ class HomeCertificationsController extends ChangeNotifier {
 
   void init() {
 
-    notifyListeners();
   }
 }
