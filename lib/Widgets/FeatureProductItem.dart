@@ -55,7 +55,8 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
                         style: TextStyle(
                             fontSize: 22,
                             color: Colors.white,
-                            fontWeight: FontWeight.w200
+                            fontWeight: FontWeight.w200,
+                          height: 1
                         ),
                       ),
                     ),

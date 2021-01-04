@@ -45,10 +45,10 @@ class HomeCertificationsDesktopView extends View<HomeCertificationsController>{
                               Text(
                                 "IMPACT TEST VIDEO DEMONSTRATION",
                                 style: TextStyle(
-                                    fontSize: 46, fontWeight: FontWeight.bold,),
+                                    fontSize: 46, fontWeight: FontWeight.bold, height: 1),
                               ),
                               SizedBox(
-                                height: 10,
+                                height: 15,
                               ),
                               Container(
                                 constraints: BoxConstraints(maxWidth: 400),
@@ -56,7 +56,8 @@ class HomeCertificationsDesktopView extends View<HomeCertificationsController>{
                                   "Testing process to meet the Miami Dade County regulations",
                                   style: TextStyle(
                                       fontSize: 22,
-                                      fontWeight: FontWeight.w400),
+                                      fontWeight: FontWeight.w400,
+                                  height: 1),
                                 ),
                               ),
                               SizedBox(

@@ -122,7 +122,7 @@ class HomeFooterDesktopView extends View<HomeFooterController>{
                           SizedBox(height: 10),
                           Text(
                             "Ave de Diego 258 Puerto Nuevo",
-                            style: TextStyle(fontSize: 22, color: Colors.white),
+                            style: TextStyle(fontSize: 22, color: Colors.white, height: 1),
                           ),
                           Text(
                             "San Juan, PR 00921",

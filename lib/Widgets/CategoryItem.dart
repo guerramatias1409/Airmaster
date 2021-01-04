@@ -51,6 +51,7 @@ class _CategoryItemState extends State<CategoryItem> {
             Text(widget.subcomment,
                 style: TextStyle(
                   fontSize: 18,
+                  height: 1
                 ),
                 maxLines: 2)
           ],
