@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:airmaster/Controllers/HomeFooterController.dart';
+import 'package:airmaster/responsive/view.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
-class HomeFooter extends StatefulWidget {
-  @override
-  _HomeFooterState createState() => _HomeFooterState();
-}
 
-class _HomeFooterState extends State<HomeFooter> {
+class HomeFooterDesktopView extends View<HomeFooterController>{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,HomeFooterController controller) {
     return Material(
       child: Container(
         height: 300,
@@ -51,7 +49,7 @@ class _HomeFooterState extends State<HomeFooter> {
                               image: DecorationImage(
                                   fit: BoxFit.cover,
                                   image:
-                                      AssetImage('assets/Footer/footer.jpg')))),
+                                  AssetImage('assets/Footer/footer.jpg')))),
                       SizedBox(width: 10),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,8 +66,8 @@ class _HomeFooterState extends State<HomeFooter> {
                                 height: 30,
                                 width: 30,
                                 decoration: BoxDecoration(
-                                borderRadius: BorderRadius.all(Radius.circular(3)),
-                                color: Colors.white,
+                                  borderRadius: BorderRadius.all(Radius.circular(3)),
+                                  color: Colors.white,
                                 ),
                                 child: Center(
                                   child: Icon(MdiIcons.facebook,
@@ -109,7 +107,7 @@ class _HomeFooterState extends State<HomeFooter> {
                               heroTag: 'location',
                               shape: RoundedRectangleBorder(
                                   borderRadius:
-                                      BorderRadius.all(Radius.circular(0))),
+                                  BorderRadius.all(Radius.circular(0))),
                               backgroundColor: Color(0xFF48A742),
                               icon: Icon(Icons.location_on, size: 12),
                               label: Text("San Juan",
