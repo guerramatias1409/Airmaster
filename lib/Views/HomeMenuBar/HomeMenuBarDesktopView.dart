@@ -11,7 +11,7 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
         height: 115,
         color: Colors.white,
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 40.0),
+          padding: const EdgeInsets.symmetric(horizontal: 55.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -33,9 +33,11 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                       },
                       child: Text("WINDOWS",
                         style: TextStyle(
-                            color: Color(0xFF5C6061).withOpacity(0.6)
+                            color: Color(0xFF5C6061).withOpacity(0.6),
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300
                         ),)),
-                  SizedBox(width: 30),
+                  SizedBox(width: 45),
                   InkWell(
                       highlightColor: Colors.transparent,
                       hoverColor: Colors.transparent,
@@ -45,9 +47,11 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                       },
                       child: Text("DOORS",
                           style: TextStyle(
-                              color: Color(0xFF5C6061).withOpacity(0.6)
+                              color: Color(0xFF5C6061).withOpacity(0.6),
+                              fontSize: 18,
+                              fontWeight: FontWeight.w300
                           ))),
-                  SizedBox(width: 30),
+                  SizedBox(width: 45),
                   InkWell(
                     highlightColor: Colors.transparent,
                     hoverColor: Colors.transparent,
@@ -56,10 +60,12 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                     },
                     child: Text("RAILINGS & SHOWERS",
                         style: TextStyle(
-                            color: Color(0xFF5C6061).withOpacity(0.6)
+                            color: Color(0xFF5C6061).withOpacity(0.6),
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300
                         )),
                   ),
-                  SizedBox(width: 30),
+                  SizedBox(width: 45),
                   InkWell(
                     highlightColor: Colors.transparent,
                     hoverColor: Colors.transparent,
@@ -68,10 +74,12 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                     },
                     child: Text("ABOUT US",
                         style: TextStyle(
-                            color: Color(0xFF5C6061).withOpacity(0.6)
+                            color: Color(0xFF5C6061).withOpacity(0.6),
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300
                         )),
                   ),
-                  SizedBox(width: 30),
+                  SizedBox(width: 45),
                   InkWell(
                     highlightColor: Colors.transparent,
                     hoverColor: Colors.transparent,
@@ -80,10 +88,12 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                     },
                     child: Text("OUR GLASS",
                         style: TextStyle(
-                            color: Color(0xFF5C6061).withOpacity(0.6)
+                            color: Color(0xFF5C6061).withOpacity(0.6),
+                            fontSize: 18,
+                            fontWeight: FontWeight.w300
                         )),
                   ),
-                  SizedBox(width: 30),
+                  SizedBox(width: 45),
                   InkWell(
                     highlightColor: Colors.transparent,
                     hoverColor: Colors.transparent,
@@ -92,7 +102,9 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                     },
                     child: Text("CONTACT US",
                         style: TextStyle(
-                            color: Color(0xFF5C6061).withOpacity(0.6)
+                            color: Color(0xFF5C6061).withOpacity(0.6),
+                          fontSize: 18,
+                          fontWeight: FontWeight.w300
                         )),
                   ),
                 ],
