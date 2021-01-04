@@ -17,7 +17,7 @@ class MainPictureDesktopView extends View<MainPictureController>{
                       fit: BoxFit.cover, image: AssetImage('assets/Home/mainpicture.jpg')))
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 30),
+            padding: const EdgeInsets.only(left: 55),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
