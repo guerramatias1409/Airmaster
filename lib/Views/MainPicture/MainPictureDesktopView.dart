@@ -21,20 +21,25 @@ class MainPictureDesktopView extends View<MainPictureController>{
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "HIGH PERFORMANCE",
-                  style: TextStyle(
-                      fontSize: 25,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w300
-                  ),
-                ),
-                Text(
-                  "WINDOWS & DOORS",
-                  style: TextStyle(
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "HIGH PERFORMANCE",
+                      style: TextStyle(
+                          fontSize: 54,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w300
+                      ),
+                    ),
+                    Text(
+                      "WINDOWS & DOORS",
+                      style: TextStyle(
+                          fontSize: 46,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                  ],
                 ),
                 SizedBox(
                   height: 10,
@@ -42,13 +47,14 @@ class MainPictureDesktopView extends View<MainPictureController>{
                 Text(
                   "IMPACT AND HURRICANE\nRESISTANCE CERTIFICATION",
                   style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 28,
                       color: Colors.white,
-                      fontWeight: FontWeight.w100
+                      fontWeight: FontWeight.w100,
+                    height: 1
                   ),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 45,
                 ),
                 SquaredButton(text: "LEARN\nMORE")
               ],
