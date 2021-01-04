@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:airmaster/Controllers/HomeMenuBarController.dart';
+import 'package:airmaster/responsive/view.dart';
 
-class HomeMenuBar extends StatefulWidget {
-  @override
-  _HomeMenuBarState createState() => _HomeMenuBarState();
-}
 
-class _HomeMenuBarState extends State<HomeMenuBar> {
+class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,HomeMenuBarController controller) {
     return Material(
       child: Container(
         height: 115,
@@ -34,9 +32,9 @@ class _HomeMenuBarState extends State<HomeMenuBar> {
                         //Navigator.pushNamed(context, '/windows');
                       },
                       child: Text("WINDOWS",
-                      style: TextStyle(
-                        color: Color(0xFF5C6061).withOpacity(0.6)
-                      ),)),
+                        style: TextStyle(
+                            color: Color(0xFF5C6061).withOpacity(0.6)
+                        ),)),
                   SizedBox(width: 30),
                   InkWell(
                       highlightColor: Colors.transparent,

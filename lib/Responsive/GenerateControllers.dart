@@ -4,6 +4,7 @@ import 'package:airmaster/Controllers/HomeFeatureProductsController.dart';
 import 'package:airmaster/Controllers/HomeFooterController.dart';
 import 'package:airmaster/Controllers/HomeGalleryController.dart';
 import 'package:airmaster/Controllers/HomeLeadingController.dart';
+import 'package:airmaster/Controllers/HomeMenuBarController.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -43,6 +44,10 @@ class GenerateControllers extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => HomeGalleryController(),
+          lazy: true,
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HomeMenuBarController(),
           lazy: true,
         ),
 
