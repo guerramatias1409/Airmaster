@@ -1,14 +1,12 @@
 import 'package:airmaster/Widgets/SquaredButton.dart';
 import 'package:flutter/material.dart';
+import 'package:airmaster/Controllers/HomeCertificationsController.dart';
+import 'package:airmaster/responsive/view.dart';
 
-class HomeCertifications extends StatefulWidget {
-  @override
-  _HomeCertificationsState createState() => _HomeCertificationsState();
-}
 
-class _HomeCertificationsState extends State<HomeCertifications> {
+class HomeCertificationsDesktopView extends View<HomeCertificationsController>{
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context,HomeCertificationsController controller) {
     return Material(
       child: Container(
         color: Colors.white,
