@@ -1,7 +1,7 @@
+import 'package:airmaster/Views/HomeLeading/HomeLeadingBase.dart';
 import 'package:airmaster/Widgets/DoorsCategories.dart';
 import 'package:airmaster/Widgets/DoorsMainPicture.dart';
 import 'package:airmaster/Widgets/HomeFooter.dart';
-import 'package:airmaster/Widgets/HomeLeading.dart';
 import 'package:airmaster/Widgets/HomeMenuBar.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +16,7 @@ class _DoorsScreenState extends State<DoorsScreen> {
     return SingleChildScrollView(
       child: Column(
         children: [
-          HomeLeading(),
+          HomeLeadingBase(),
           HomeMenuBar(),
           DoorsMainPicture(),
           DoorsCategories(),
