@@ -42,7 +42,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
                   children: [
                     Text(widget.title,
                       style: TextStyle(
-                          fontSize: 18,
+                          fontSize: widget.isMobile ? 18 : 46,
                           letterSpacing: 1,
                           fontWeight: FontWeight.w600,
                         color: Colors.white
@@ -54,7 +54,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
                       constraints: BoxConstraints(maxWidth: widget.isMobile ? 150 : 450),
                       child: Text(widget.content,
                         style: TextStyle(
-                            fontSize: 12,
+                            fontSize: widget.isMobile ? 12 : 22,
                             color: Colors.white,
                             fontWeight: FontWeight.w200,
                           height: 1
@@ -64,7 +64,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
                     SizedBox(
                       height: widget.isMobile ? 10 : 15,
                     ),
-                    SquaredButton(text: "LEARN\nMORE", isMobile: true)
+                    SquaredButton(text: "LEARN\nMORE", isMobile: widget.isMobile)
                   ],
                 ),
               ),
