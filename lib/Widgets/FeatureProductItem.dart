@@ -5,8 +5,9 @@ class FeatureProductItem extends StatefulWidget {
   String title;
   String content;
   String image;
+  bool isMobile;
 
-  FeatureProductItem({this.title, this.content, this.image});
+  FeatureProductItem({this.title, this.content, this.image, this.isMobile = false});
 
   @override
   _FeatureProductItemState createState() => _FeatureProductItemState();
@@ -16,7 +17,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 505,
+      height: widget.isMobile ? 200 : 505,
       child: Row(
         children: [
           Flexible(
@@ -34,26 +35,26 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
               color: Color(0xFF5C6061),
               width: double.infinity,
               child: Padding(
-                padding: const EdgeInsets.only(left: 48),
+                padding: EdgeInsets.only(left: widget.isMobile ? 20 : 48),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(widget.title,
                       style: TextStyle(
-                          fontSize: 46,
+                          fontSize: 18,
                           letterSpacing: 1,
                           fontWeight: FontWeight.w600,
                         color: Colors.white
                       ),),
                     SizedBox(
-                      height: 10,
+                      height: widget.isMobile ? 5 : 10,
                     ),
                     Container(
-                      constraints: BoxConstraints(maxWidth: 450),
+                      constraints: BoxConstraints(maxWidth: widget.isMobile ? 150 : 450),
                       child: Text(widget.content,
                         style: TextStyle(
-                            fontSize: 22,
+                            fontSize: 12,
                             color: Colors.white,
                             fontWeight: FontWeight.w200,
                           height: 1
@@ -61,9 +62,9 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
                       ),
                     ),
                     SizedBox(
-                      height: 15,
+                      height: widget.isMobile ? 10 : 15,
                     ),
-                    SquaredButton(text: "LEARN\nMORE",)
+                    SquaredButton(text: "LEARN\nMORE", isMobile: true)
                   ],
                 ),
               ),
