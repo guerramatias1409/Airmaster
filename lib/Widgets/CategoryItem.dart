@@ -6,8 +6,9 @@ class CategoryItem extends StatefulWidget {
   String subcomment;
   String image;
   String route;
+  bool isMobile;
 
-  CategoryItem({this.title, this.image, this.comment, this.subcomment, this.route});
+  CategoryItem({this.title, this.image, this.comment, this.subcomment, this.route, this.isMobile = false});
 
   @override
   _CategoryItemState createState() => _CategoryItemState();
@@ -26,34 +27,34 @@ class _CategoryItemState extends State<CategoryItem> {
         // }
       },
       child: Container(
-        width: 310,
+        width: widget.isMobile ? 100 : 310,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               widget.title,
-              style: TextStyle(fontSize: 28),
+              style: TextStyle(fontSize: widget.isMobile ? 15 : 28),
             ),
             SizedBox(height: 5),
             Container(
-                height: 310,
-                width: 310,
+                height: widget.isMobile ? 100 : 310,
+                width: widget.isMobile ? 100 : 310,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         fit: BoxFit.cover, image: AssetImage(widget.image)))),
             SizedBox(height: 5),
             Text(widget.comment,
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize:  widget.isMobile ? 12 : 20,
                 ),
-                maxLines: 1),
+                maxLines: widget.isMobile ? 3 : 1),
             Text(widget.subcomment,
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize:  widget.isMobile ? 10 : 18,
                   height: 1
                 ),
-                maxLines: 2)
+                maxLines: widget.isMobile ? 4 : 2)
           ],
         ),
       ),
