@@ -24,7 +24,7 @@ class HomeGalleryDesktopView extends View<HomeGalleryController>{
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 140, right: 140, bottom: 120),
+            padding: const EdgeInsets.only(left: 120, right: 120, bottom: 120),
             child: Column(
               children: [
                 Container(
