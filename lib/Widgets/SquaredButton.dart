@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class SquaredButton extends StatefulWidget {
   String text;
+  bool isMobile;
 
-  SquaredButton({this.text});
+  SquaredButton({this.text, this.isMobile = false});
 
   @override
   _SquaredButtonState createState() => _SquaredButtonState();
@@ -14,8 +15,8 @@ class _SquaredButtonState extends State<SquaredButton> {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        width: 120,
-        height: 120,
+        width: widget.isMobile ? 50 : 120,
+        height: widget.isMobile ? 50 : 120,
         child: FloatingActionButton(
           heroTag: null,
           onPressed: () {},
@@ -24,7 +25,7 @@ class _SquaredButtonState extends State<SquaredButton> {
             widget.text,
             textAlign: TextAlign.center,
             style: TextStyle(
-                fontSize: 33,
+                fontSize: widget.isMobile ? 15 : 33,
                 fontWeight: FontWeight.w300,
               color: Colors.white
             ),),
