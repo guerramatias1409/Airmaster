@@ -15,6 +15,14 @@ class CategoryItem extends StatefulWidget {
 }
 
 class _CategoryItemState extends State<CategoryItem> {
+  double imageSide;
+
+  @override
+  void didChangeDependencies() {
+    imageSide = MediaQuery.of(context).size.width/5;
+    super.didChangeDependencies();
+  }
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -27,7 +35,7 @@ class _CategoryItemState extends State<CategoryItem> {
         // }
       },
       child: Container(
-        width: widget.isMobile ? 100 : 310,
+        width: imageSide,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,8 +46,8 @@ class _CategoryItemState extends State<CategoryItem> {
             ),
             SizedBox(height: 5),
             Container(
-                height: widget.isMobile ? 100 : 310,
-                width: widget.isMobile ? 100 : 310,
+                height: imageSide,
+                width: imageSide,
                 decoration: BoxDecoration(
                     image: DecorationImage(
                         fit: BoxFit.cover, image: AssetImage(widget.image)))),
