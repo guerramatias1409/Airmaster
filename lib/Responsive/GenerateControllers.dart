@@ -1,5 +1,6 @@
 import 'package:airmaster/Controllers/HomeCategoriesController.dart';
 import 'package:airmaster/Controllers/HomeCertificationsController.dart';
+import 'package:airmaster/Controllers/HomeController.dart';
 import 'package:airmaster/Controllers/HomeFeatureProductsController.dart';
 import 'package:airmaster/Controllers/HomeFooterController.dart';
 import 'package:airmaster/Controllers/HomeGalleryController.dart';
@@ -53,6 +54,10 @@ class GenerateControllers extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (context) => MainPictureController(),
+          lazy: true,
+        ),
+        ChangeNotifierProvider(
+          create: (context) => HomeController(),
           lazy: true,
         ),
 

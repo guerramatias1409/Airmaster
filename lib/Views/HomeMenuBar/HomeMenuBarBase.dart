@@ -17,7 +17,7 @@ class HomeMenuBarBaseState extends State<HomeMenuBarBase>{
   Widget build(BuildContext context) {
     return BaseWidget<HomeMenuBarController>(
       onControllerReady: (controller) =>
-          controller.init(),
+          controller.init(context),
       child: PlatformLayout(
         mobile: HomeMenuBarMobileView(),
         web: ScreenTypeLayout(

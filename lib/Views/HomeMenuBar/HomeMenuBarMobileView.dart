@@ -16,7 +16,9 @@ class HomeMenuBarMobileView extends View<HomeMenuBarController>{
           children: [
             IconButton(
                 icon: Icon(MdiIcons.menu, color: Color(0xFF5C6061),size: 25),
-                onPressed: null),
+                onPressed: (){
+                  controller.homeController.changeMenuBool();
+                }),
             Container(
               width: 180,
               decoration: BoxDecoration(

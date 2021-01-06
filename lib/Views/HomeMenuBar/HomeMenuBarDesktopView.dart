@@ -21,6 +21,7 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                       fit: BoxFit.contain,
                       image: AssetImage('assets/logo.png'))),
             ),
+            SizedBox(width: 25),
             Row(
               children: [
                 InkWell(
