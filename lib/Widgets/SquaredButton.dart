@@ -25,8 +25,9 @@ class _SquaredButtonState extends State<SquaredButton> {
             widget.text,
             textAlign: TextAlign.center,
             style: TextStyle(
+              height: 1,
                 fontSize: widget.isMobile ? 15 : 33,
-                fontWeight: FontWeight.w300,
+                fontWeight: FontWeight.w100,
               color: Colors.white
             ),),
           shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black, width: 0.8)),

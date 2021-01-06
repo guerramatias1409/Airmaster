@@ -30,36 +30,6 @@ class HomeDesktopView extends View<HomeController>{
                 HomeFooterBase()
               ],
             )
-
-
-          // Stack(
-          //   alignment: Alignment.topCenter,
-          //   children: [
-          //     Container(
-          //       height: MediaQuery.of(context).size.height * 7.17,
-          //       decoration: BoxDecoration(
-          //           image: DecorationImage(
-          //               fit: BoxFit.fitWidth,
-          //               image: AssetImage(
-          //                   'assets/home.png'))),
-          //     ),
-          //     Opacity(
-          //       opacity: 0.7,
-          //       child: Column(
-          //         children: [
-          //           HomeLeadingBase(),
-          //           HomeMenuBarBase(),
-          //           MainPictureBase(),
-          //           HomeCategoriesBase(),
-          //           HomeFeatureProductsBase(),
-          //           HomeCertificationsBase(),
-          //           HomeGalleryBase(),
-          //           HomeFooterBase()
-          //         ],
-          //       ),
-          //     ),
-          //   ],
-          // ),
         ),
       ),
     );

@@ -28,14 +28,14 @@ class MainPictureDesktopView extends View<MainPictureController>{
                     style: TextStyle(
                         fontSize: 54,
                         color: Colors.white,
-                        fontWeight: FontWeight.w300
+                        fontWeight: FontWeight.w100,
                     ),
                   ),
                   Text(
                     "WINDOWS & DOORS",
                     style: TextStyle(
                         fontSize: 46,
-                        fontWeight: FontWeight.bold,
+                        fontWeight: FontWeight.w900,
                         color: Colors.white),
                   ),
                 ],
@@ -46,7 +46,7 @@ class MainPictureDesktopView extends View<MainPictureController>{
               Text(
                 "IMPACT AND HURRICANE\nRESISTANCE CERTIFICATION",
                 style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 26,
                     color: Colors.white,
                     fontWeight: FontWeight.w100,
                   height: 1

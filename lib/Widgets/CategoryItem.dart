@@ -55,14 +55,18 @@ class _CategoryItemState extends State<CategoryItem> {
             Text(widget.comment,
                 style: TextStyle(
                   fontSize:  widget.isMobile ? 12 : 20,
+                  fontWeight: FontWeight.w400
                 ),
                 maxLines: widget.isMobile ? 3 : 1),
-            Text(widget.subcomment,
-                style: TextStyle(
-                  fontSize:  widget.isMobile ? 10 : 18,
-                  height: 1
-                ),
-                maxLines: widget.isMobile ? 4 : 2)
+            Container(
+              constraints: BoxConstraints(maxWidth: 300),
+              child: Text(widget.subcomment,
+                  style: TextStyle(
+                    fontSize:  widget.isMobile ? 10 : 18,
+                    height: 1
+                  ),
+                  maxLines: widget.isMobile ? 4 : 2),
+            )
           ],
         ),
       ),

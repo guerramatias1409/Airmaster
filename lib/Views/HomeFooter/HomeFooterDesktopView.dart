@@ -21,7 +21,7 @@ class HomeFooterDesktopView extends View<HomeFooterController>{
               children: [
                 Text(
                   "San Juan Showroom",
-                  style: TextStyle(fontSize: 25, color: Colors.white),
+                  style: TextStyle(fontSize: 25, color: Colors.white, fontWeight: FontWeight.w100),
                 ),
                 Container(
                   height: 80,
@@ -56,7 +56,7 @@ class HomeFooterDesktopView extends View<HomeFooterController>{
                       children: [
                         Text(
                           "Follow us on social media",
-                          style: TextStyle(fontSize: 22, color: Colors.white),
+                          style: TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.w100),
                         ),
                         SizedBox(height: 10),
                         Row(
@@ -121,11 +121,11 @@ class HomeFooterDesktopView extends View<HomeFooterController>{
                         SizedBox(height: 10),
                         Text(
                           "Ave de Diego 258 Puerto Nuevo",
-                          style: TextStyle(fontSize: 22, color: Colors.white, height: 1),
+                          style: TextStyle(fontSize: 22, color: Colors.white, height: 1, fontWeight: FontWeight.w100),
                         ),
                         Text(
                           "San Juan, PR 00921",
-                          style: TextStyle(fontSize: 22, color: Colors.white),
+                          style: TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.w100),
                         ),
                         SizedBox(height: 10),
                         Row(
@@ -133,7 +133,7 @@ class HomeFooterDesktopView extends View<HomeFooterController>{
                             Text(
                               "787 999 0717",
                               style: TextStyle(
-                                  fontSize: 22, color: Colors.white),
+                                  fontSize: 22, color: Colors.white, fontWeight: FontWeight.w100),
                             ),
                             SizedBox(width: 20),
                             //TODO ver por que no funciona el HomeLeadingDivider
@@ -142,7 +142,7 @@ class HomeFooterDesktopView extends View<HomeFooterController>{
                             Text(
                               "787 999 0719",
                               style: TextStyle(
-                                  fontSize: 22, color: Colors.white),
+                                  fontSize: 22, color: Colors.white, fontWeight: FontWeight.w100),
                             )
                           ],
                         )
@@ -152,7 +152,7 @@ class HomeFooterDesktopView extends View<HomeFooterController>{
                 ),
                 Text(
                   "Air Master © 2020 All rights reserved",
-                  style: TextStyle(fontSize: 22, color: Colors.white),
+                  style: TextStyle(fontSize: 22, color: Colors.white, fontWeight: FontWeight.w100),
                 )
               ],
             )

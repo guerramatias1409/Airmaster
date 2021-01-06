@@ -33,9 +33,9 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                     },
                     child: Text("WINDOWS",
                       style: TextStyle(
-                          color: Color(0xFF5C6061).withOpacity(0.6),
+                          color: Color(0xFF5C6061).withOpacity(0.8),
                           fontSize: 18,
-                          fontWeight: FontWeight.w300
+                          fontWeight: FontWeight.w100
                       ),)),
                 SizedBox(width: 45),
                 InkWell(
@@ -47,9 +47,9 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                     },
                     child: Text("DOORS",
                         style: TextStyle(
-                            color: Color(0xFF5C6061).withOpacity(0.6),
+                            color: Color(0xFF5C6061).withOpacity(0.8),
                             fontSize: 18,
-                            fontWeight: FontWeight.w300
+                            fontWeight: FontWeight.w100
                         ))),
                 SizedBox(width: 45),
                 InkWell(
@@ -60,9 +60,9 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                   },
                   child: Text("RAILINGS & SHOWERS",
                       style: TextStyle(
-                          color: Color(0xFF5C6061).withOpacity(0.6),
+                          color: Color(0xFF5C6061).withOpacity(0.8),
                           fontSize: 18,
-                          fontWeight: FontWeight.w300
+                          fontWeight: FontWeight.w100
                       )),
                 ),
                 SizedBox(width: 45),
@@ -74,9 +74,9 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                   },
                   child: Text("ABOUT US",
                       style: TextStyle(
-                          color: Color(0xFF5C6061).withOpacity(0.6),
+                          color: Color(0xFF5C6061).withOpacity(0.8),
                           fontSize: 18,
-                          fontWeight: FontWeight.w300
+                          fontWeight: FontWeight.w100
                       )),
                 ),
                 SizedBox(width: 45),
@@ -88,9 +88,9 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                   },
                   child: Text("OUR GLASS",
                       style: TextStyle(
-                          color: Color(0xFF5C6061).withOpacity(0.6),
+                          color: Color(0xFF5C6061).withOpacity(0.8),
                           fontSize: 18,
-                          fontWeight: FontWeight.w300
+                          fontWeight: FontWeight.w100
                       )),
                 ),
                 SizedBox(width: 45),
@@ -102,9 +102,9 @@ class HomeMenuBarDesktopView extends View<HomeMenuBarController>{
                   },
                   child: Text("CONTACT US",
                       style: TextStyle(
-                          color: Color(0xFF5C6061).withOpacity(0.6),
+                          color: Color(0xFF5C6061).withOpacity(0.8),
                         fontSize: 18,
-                        fontWeight: FontWeight.w300
+                        fontWeight: FontWeight.w100
                       )),
                 ),
               ],
