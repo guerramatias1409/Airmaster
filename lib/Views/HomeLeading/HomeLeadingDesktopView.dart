@@ -38,18 +38,25 @@ class HomeLeadingDesktopView extends View<HomeLeadingController> {
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 4),
                   width: 116,
-                  child: FloatingActionButton.extended (
-                    heroTag: 'whereToBuy' ,
+                  child: RaisedButton (
+                    padding: EdgeInsets.all(5),
+                    color: Color(0xFF48A742),
                     shape: RoundedRectangleBorder (
                         borderRadius: BorderRadius.all (
                             Radius.circular ( 0 ) ) ) ,
-                    backgroundColor:  Color(0xFF48A742) ,
-                    icon: Icon ( Icons.location_on,size: 16,) ,
-                    label: Text ("WHERE TO BUY" ,
-                        style: TextStyle (
-                            fontSize: 10 ,
-                            color: Colors.white ,
-                            fontWeight: FontWeight.bold ) ) ,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon (Icons.location_on,size: 16, color: Colors.white,),
+                        SizedBox(width: 5),
+                        Text ("WHERE TO BUY" ,
+                            style: TextStyle (
+                                fontSize: 10 ,
+                                color: Colors.white ,
+                                fontWeight: FontWeight.w100 ) )
+                      ],
+                    ),
                     onPressed: () {
                     },
                   ),
