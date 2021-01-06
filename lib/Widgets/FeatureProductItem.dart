@@ -17,7 +17,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: widget.isMobile ? 200 : 505,
+      height: widget.isMobile ? 240 : 505,
       child: Row(
         children: [
           Flexible(
@@ -35,7 +35,7 @@ class _FeatureProductItemState extends State<FeatureProductItem> {
               color: Color(0xFF5C6061),
               width: double.infinity,
               child: Padding(
-                padding: EdgeInsets.only(left: widget.isMobile ? 20 : 48),
+                padding: EdgeInsets.only(left: widget.isMobile ? 20 : 48, top: 15, bottom: 15),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,

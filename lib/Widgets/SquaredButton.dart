@@ -15,8 +15,8 @@ class _SquaredButtonState extends State<SquaredButton> {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        width: widget.isMobile ? 50 : 120,
-        height: widget.isMobile ? 50 : 120,
+        width: widget.isMobile ? 60 : 120,
+        height: widget.isMobile ? 60 : 120,
         child: FloatingActionButton(
           heroTag: null,
           onPressed: () {},
