@@ -145,15 +145,20 @@ class HomeFooterMobileView extends View<HomeFooterController>{
                             )
                           ],
                         ),
-                        SizedBox(height: 10),
-                        Text(
-                          "Air Master © 2020 All rights reserved",
-                          style: TextStyle(fontSize: 12, color: Colors.white),
-                        )
                       ],
                     )
                   ],
                 ),
+              ],
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Air Master © 2020 All rights reserved",
+                  style: TextStyle(fontSize: 12, color: Colors.white),
+                )
               ],
             )
           ],
