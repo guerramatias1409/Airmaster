@@ -29,8 +29,8 @@ class HomeGalleryDesktopView extends View<HomeGalleryController>{
               children: [
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery1.jpg'),
                       GalleryItem(image: 'assets/Home/gallery2.jpg'),
@@ -41,8 +41,8 @@ class HomeGalleryDesktopView extends View<HomeGalleryController>{
                 SizedBox(height: 55),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery4.jpg'),
                       GalleryItem(image: 'assets/Home/gallery5.jpg'),
@@ -53,8 +53,8 @@ class HomeGalleryDesktopView extends View<HomeGalleryController>{
                 SizedBox(height: 55),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery7.jpg'),
                       GalleryItem(image: 'assets/Home/gallery8.jpg'),
@@ -65,8 +65,8 @@ class HomeGalleryDesktopView extends View<HomeGalleryController>{
                 SizedBox(height: 55),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery10.jpg'),
                       GalleryItem(image: 'assets/Home/gallery11.jpg'),
@@ -77,8 +77,8 @@ class HomeGalleryDesktopView extends View<HomeGalleryController>{
                 SizedBox(height: 55),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery13.jpg'),
                       GalleryItem(image: 'assets/Home/gallery14.jpg'),
@@ -89,8 +89,8 @@ class HomeGalleryDesktopView extends View<HomeGalleryController>{
                 SizedBox(height: 55),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery16.jpg'),
                       GalleryItem(image: 'assets/Home/gallery17.jpg'),

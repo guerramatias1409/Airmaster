@@ -40,8 +40,7 @@ class HomeGalleryMobileView extends View<HomeGalleryController>{
                 SizedBox(height: 15),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
                     children: [
                       GalleryItem(image: 'assets/Home/gallery4.jpg', isMobile: true),
                       GalleryItem(image: 'assets/Home/gallery5.jpg', isMobile: true),
@@ -52,8 +51,8 @@ class HomeGalleryMobileView extends View<HomeGalleryController>{
                 SizedBox(height: 15),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery7.jpg', isMobile: true),
                       GalleryItem(image: 'assets/Home/gallery8.jpg', isMobile: true),
@@ -64,8 +63,8 @@ class HomeGalleryMobileView extends View<HomeGalleryController>{
                 SizedBox(height: 15),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery10.jpg', isMobile: true),
                       GalleryItem(image: 'assets/Home/gallery11.jpg', isMobile: true),
@@ -76,8 +75,8 @@ class HomeGalleryMobileView extends View<HomeGalleryController>{
                 SizedBox(height: 15),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery13.jpg', isMobile: true),
                       GalleryItem(image: 'assets/Home/gallery14.jpg', isMobile: true),
@@ -88,8 +87,8 @@ class HomeGalleryMobileView extends View<HomeGalleryController>{
                 SizedBox(height: 15),
                 Container(
                   width: double.infinity,
-                  child: Wrap(
-                    alignment: WrapAlignment.spaceBetween,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery16.jpg', isMobile: true),
                       GalleryItem(image: 'assets/Home/gallery17.jpg', isMobile: true),
