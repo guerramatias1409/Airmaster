@@ -23,7 +23,7 @@ class HomeCertificationsMobileView extends View<HomeCertificationsController>{
             ),
           ),
           Container(
-            height: 180,
+            height: 210,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Row(
