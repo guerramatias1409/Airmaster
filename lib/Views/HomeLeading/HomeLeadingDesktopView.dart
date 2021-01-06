@@ -37,7 +37,6 @@ class HomeLeadingDesktopView extends View<HomeLeadingController> {
               children: [
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 4),
-                  width: 116,
                   child: RaisedButton (
                     padding: EdgeInsets.all(5),
                     color: Color(0xFF48A742),
