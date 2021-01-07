@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 class HomeController extends ChangeNotifier {
   double width;
   bool openedMenu;
+  bool isEditMode;
 
   void init() {
     width = 0;
     openedMenu = false;
+    isEditMode = false;
   }
 
   void changeMenuBool(){

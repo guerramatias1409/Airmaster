@@ -15,7 +15,7 @@ class _HomeLeadingBaseState extends State<HomeLeadingBase> {
   @override
   Widget build(BuildContext context) {
     return BaseWidget<HomeLeadingController>(
-      onControllerReady: (controller) => controller.init(),
+      onControllerReady: (controller) => controller.init(context),
       child: PlatformLayout(
         mobile: HomeLeadingMobileView(),
         web: ScreenTypeLayout(

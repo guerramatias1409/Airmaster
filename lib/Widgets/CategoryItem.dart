@@ -1,14 +1,18 @@
+import 'dart:html';
+
+import 'package:airmaster/Controllers/HomeController.dart';
+import 'package:airmaster/Widgets/EditTextPopUp.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class CategoryItem extends StatefulWidget {
-  String title;
-  String comment;
-  String subcomment;
   String image;
   String route;
   bool isMobile;
+  DocumentReference documentReference;
 
-  CategoryItem({this.title, this.image, this.comment, this.subcomment, this.route, this.isMobile = false});
+  CategoryItem({this.image, this.route, this.isMobile = false, this.documentReference});
 
   @override
   _CategoryItemState createState() => _CategoryItemState();
@@ -16,6 +20,16 @@ class CategoryItem extends StatefulWidget {
 
 class _CategoryItemState extends State<CategoryItem> {
   double imageSide;
+  HomeController homeController;
+  DocumentSnapshot item;
+
+
+  @override
+  void initState() {
+    homeController = Provider.of<HomeController>(context, listen: false);
+    getItem();
+    super.initState();
+  }
 
   @override
   void didChangeDependencies() {
@@ -40,9 +54,16 @@ class _CategoryItemState extends State<CategoryItem> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              widget.title,
-              style: TextStyle(fontSize: widget.isMobile ? 15 : 28),
+            GestureDetector(
+              onTap: (){
+                if(homeController.isEditMode){
+                  openEditPopUp("Title");
+                }
+              },
+              child: Text(
+                item.data()["Title"],
+                style: TextStyle(fontSize: widget.isMobile ? 15 : 28),
+              ),
             ),
             SizedBox(height: 5),
             Container(
@@ -52,24 +73,65 @@ class _CategoryItemState extends State<CategoryItem> {
                     image: DecorationImage(
                         fit: BoxFit.cover, image: AssetImage(widget.image)))),
             SizedBox(height: 5),
-            Text(widget.comment,
-                style: TextStyle(
-                  fontSize:  widget.isMobile ? 12 : 20,
-                  fontWeight: FontWeight.w400
-                ),
-                maxLines: widget.isMobile ? 3 : 1),
+            GestureDetector(
+                onTap: (){
+                  if(homeController.isEditMode){
+                    openEditPopUp("Comment");
+                  }
+                },
+              child: Text(
+                  item.data()["Comment"],
+                  style: TextStyle(
+                    fontSize:  widget.isMobile ? 12 : 20,
+                    fontWeight: FontWeight.w400
+                  ),
+                  maxLines: widget.isMobile ? 3 : 1),
+            ),
             Container(
               constraints: BoxConstraints(maxWidth: 300),
-              child: Text(widget.subcomment,
-                  style: TextStyle(
-                    fontSize:  widget.isMobile ? 10 : 18,
-                    height: 1
-                  ),
-                  maxLines: widget.isMobile ? 4 : 2),
+              child: GestureDetector(
+                  onTap: (){
+                    if(homeController.isEditMode){
+                      openEditPopUp("Subcomment");
+                    }
+                  },
+                child: Text(
+                    item.data()["Subcomment"],
+                    style: TextStyle(
+                      fontSize:  widget.isMobile ? 10 : 18,
+                      height: 1
+                    ),
+                    maxLines: widget.isMobile ? 4 : 2),
+              ),
             )
           ],
         ),
       ),
     );
+  }
+
+  void openEditPopUp(String field) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            contentPadding: EdgeInsets.only(bottom: 10),
+            elevation: 5,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0)),
+            content: Container(
+              height: 200,
+                width: 300,
+                child: Center(child: EditTextPopUp(widget.documentReference, field))),
+          );
+        });
+  }
+
+  void getItem() async{
+    var document = await widget.documentReference.get();
+    setState(() {
+      item = document;
+    });
+
   }
 }
