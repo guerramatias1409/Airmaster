@@ -41,6 +41,7 @@ class HomeGalleryMobileView extends View<HomeGalleryController>{
                 Container(
                   width: double.infinity,
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       GalleryItem(image: 'assets/Home/gallery4.jpg', isMobile: true),
                       GalleryItem(image: 'assets/Home/gallery5.jpg', isMobile: true),
