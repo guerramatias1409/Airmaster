@@ -6,7 +6,9 @@ import 'package:airmaster/responsive/view.dart';
 class MainPictureDesktopView extends View<MainPictureController>{
   @override
   Widget build(BuildContext context,MainPictureController controller) {
-    return Stack(
+    return controller.item == null
+        ? Container()
+    : Stack(
       alignment: AlignmentDirectional.centerStart,
       children: [
         Container(

@@ -39,7 +39,9 @@ class _CategoryItemState extends State<CategoryItem> {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
+    return item == null
+        ? Container()
+    : InkWell(
       highlightColor: Colors.transparent,
       hoverColor: Colors.transparent,
       splashColor: Colors.transparent,
