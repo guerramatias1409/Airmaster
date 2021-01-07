@@ -13,7 +13,7 @@ class MainPictureDesktopView extends View<MainPictureController>{
             height: 830,
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    fit: BoxFit.cover, image: AssetImage('assets/Home/mainpicture.jpg')))
+                    fit: BoxFit.cover, image: NetworkImage(controller.item.data()["ImageUrl"])))
         ),
         Padding(
           padding: const EdgeInsets.only(left: 55),
@@ -23,39 +23,63 @@ class MainPictureDesktopView extends View<MainPictureController>{
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "HIGH PERFORMANCE",
-                    style: TextStyle(
-                        fontSize: 54,
-                        color: Colors.white,
-                        fontWeight: FontWeight.w100,
+                  GestureDetector(
+                    onTap: (){
+                      if(controller.homeController.isEditMode){
+                        controller.openEditPopUp("Title1", context);
+                      }
+                    },
+                    child: Text(
+                      controller.item.data()["Title1"],
+                      style: TextStyle(
+                          fontSize: 54,
+                          color: Colors.white,
+                          fontWeight: FontWeight.w100,
+                      ),
                     ),
                   ),
-                  Text(
-                    "WINDOWS & DOORS",
-                    style: TextStyle(
-                        fontSize: 46,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white),
+                  GestureDetector(
+                    onTap: (){
+                      if(controller.homeController.isEditMode){
+                        controller.openEditPopUp("Title2", context);
+                      }
+                    },
+                    child: Text(
+                      controller.item.data()["Title2"],
+                      style: TextStyle(
+                          fontSize: 46,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.white),
+                    ),
                   ),
                 ],
               ),
               SizedBox(
                 height: 10,
               ),
-              Text(
-                "IMPACT AND HURRICANE\nRESISTANCE CERTIFICATION",
-                style: TextStyle(
-                    fontSize: 26,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w100,
-                  height: 1
+              Container(
+                constraints: BoxConstraints(maxWidth: 350),
+                child: GestureDetector(
+                  onTap: (){
+                    if(controller.homeController.isEditMode){
+                      controller.openEditPopUp("Subtitle", context);
+                    }
+                  },
+                  child: Text(
+                    controller.item.data()["Subtitle"],
+                    style: TextStyle(
+                        fontSize: 26,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w100,
+                      height: 1
+                    ),
+                  ),
                 ),
               ),
               SizedBox(
                 height: 45,
               ),
-              SquaredButton(text: "LEARN\nMORE")
+              SquaredButton(text: controller.item.data()["ButtonText"])
             ],
           ),
         )

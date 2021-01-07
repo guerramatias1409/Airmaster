@@ -17,7 +17,7 @@ class MainPictureBaseState extends State<MainPictureBase>{
   Widget build(BuildContext context) {
     return BaseWidget<MainPictureController>(
       onControllerReady: (controller) =>
-          controller.init(),
+          controller.init(context),
       child: PlatformLayout(
         mobile: MainPictureMobileView(),
         web: ScreenTypeLayout(

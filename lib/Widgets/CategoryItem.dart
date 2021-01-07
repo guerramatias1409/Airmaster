@@ -132,6 +132,5 @@ class _CategoryItemState extends State<CategoryItem> {
     setState(() {
       item = document;
     });
-
   }
 }
