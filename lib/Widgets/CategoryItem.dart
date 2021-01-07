@@ -71,7 +71,7 @@ class _CategoryItemState extends State<CategoryItem> {
                 width: imageSide,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        fit: BoxFit.cover, image: AssetImage(widget.image)))),
+                        fit: BoxFit.cover, image: NetworkImage(item.data()["ImageUrl"])))),
             SizedBox(height: 5),
             GestureDetector(
                 onTap: (){

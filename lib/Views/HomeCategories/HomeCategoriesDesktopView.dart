@@ -14,18 +14,14 @@ class HomeCategoriesDesktopView extends View<HomeCategoriesController>{
         children: [
           CategoryItem(
             route: '/windows',
-            image: 'assets/Home/categorywindows.jpg',
             documentReference: FirebaseFirestore.instance.collection("Categories").doc("Windows"),
           ),
           CategoryItem(
               route: '/doors',
-              image: 'assets/Home/categorydoors.jpg',
               documentReference: FirebaseFirestore.instance.collection("Categories").doc("Doors")),
           CategoryItem(
-              image: 'assets/Home/categoryrailings.jpg',
               documentReference: FirebaseFirestore.instance.collection("Categories").doc("Railings")),
           CategoryItem(
-              image: 'assets/Home/categoryshowers.jpg',
               documentReference: FirebaseFirestore.instance.collection("Categories").doc("Showers"))
         ],
       ),

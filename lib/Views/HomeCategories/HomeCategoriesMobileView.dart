@@ -14,23 +14,19 @@ class HomeCategoriesMobileView extends View<HomeCategoriesController>{
         children: [
           CategoryItem(
             route: '/windows',
-            image: 'assets/Home/categorywindows.jpg',
             isMobile: true,
             documentReference: FirebaseFirestore.instance.collection("Categories").doc("Windows")
           ),
           CategoryItem(
               route: '/doors',
-              image: 'assets/Home/categorydoors.jpg',
               isMobile: true,
               documentReference: FirebaseFirestore.instance.collection("Categories").doc("Doors")
           ),
           CategoryItem(
-              image: 'assets/Home/categoryrailings.jpg',
               isMobile: true,
               documentReference: FirebaseFirestore.instance.collection("Categories").doc("Railings")
           ),
           CategoryItem(
-              image: 'assets/Home/categoryshowers.jpg',
               isMobile: true,
               documentReference: FirebaseFirestore.instance.collection("Categories").doc("Showers")
           )
