@@ -14,11 +14,25 @@ class HomeMenuBarMobileView extends View<HomeMenuBarController>{
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            IconButton(
-                icon: Icon(MdiIcons.menu, color: Color(0xFF5C6061),size: 25),
-                onPressed: (){
-                  controller.homeController.changeMenuBool();
-                }),
+            Row(
+              children: [
+                IconButton(
+                    icon: Icon(MdiIcons.menu, color: Color(0xFF5C6061),size: 25),
+                    onPressed: (){
+                      controller.homeController.changeMenuBool();
+                    }),
+                SizedBox(width: 5),
+                Row(
+                  children: [
+                    IconButton(icon: Icon(Icons.edit, color: Color(0xFF5C6061)),
+                        onPressed: (){
+                          controller.changeEditMode();
+                        }),
+                    Text(controller.homeController.isEditMode ? "EDIT MODE" : "", style: TextStyle(color: Color(0xFF5C6061)))
+                  ],
+                )
+              ],
+            ),
             Container(
               width: 180,
               decoration: BoxDecoration(

@@ -8,4 +8,14 @@ class HomeMenuBarController extends ChangeNotifier {
   void init(BuildContext _context) {
     homeController = Provider.of<HomeController>(_context, listen: false);
   }
+
+  void changeEditMode() {
+    if(homeController.isEditMode){
+      homeController.isEditMode = false;
+    }else{
+      homeController.isEditMode = true;
+    }
+    notifyListeners();
+  }
+
 }
