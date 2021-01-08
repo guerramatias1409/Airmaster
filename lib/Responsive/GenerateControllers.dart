@@ -1,3 +1,4 @@
+import 'package:airmaster/Controllers/ChangeImageController.dart';
 import 'package:airmaster/Controllers/HomeCategoriesController.dart';
 import 'package:airmaster/Controllers/HomeCertificationsController.dart';
 import 'package:airmaster/Controllers/HomeController.dart';
@@ -60,7 +61,10 @@ class GenerateControllers extends StatelessWidget {
           create: (context) => HomeController(),
           lazy: true,
         ),
-
+        ChangeNotifierProvider(
+          create: (context) => ChangeImageController(),
+          lazy: true,
+        ),
       ],
       child: child,
     );

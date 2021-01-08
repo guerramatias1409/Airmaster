@@ -1,6 +1,5 @@
-import 'dart:html';
-
 import 'package:airmaster/Controllers/HomeController.dart';
+import 'package:airmaster/Views/ChangeImage/ChangeImageBase.dart';
 import 'package:airmaster/Widgets/EditTextPopUp.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -68,12 +67,19 @@ class _CategoryItemState extends State<CategoryItem> {
               ),
             ),
             SizedBox(height: 5),
-            Container(
-                height: imageSide,
-                width: imageSide,
-                decoration: BoxDecoration(
-                    image: DecorationImage(
-                        fit: BoxFit.cover, image: NetworkImage(item.data()["ImageUrl"])))),
+            GestureDetector(
+              onTap: (){
+                if(homeController.isEditMode){
+                  openChangeImagePopUp();
+                }
+              },
+              child: Container(
+                  height: imageSide,
+                  width: imageSide,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          fit: BoxFit.cover, image: NetworkImage(item.data()["ImageUrl"])))),
+            ),
             SizedBox(height: 5),
             GestureDetector(
                 onTap: (){
@@ -129,10 +135,29 @@ class _CategoryItemState extends State<CategoryItem> {
         });
   }
 
+
+  void openChangeImagePopUp() {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            contentPadding: EdgeInsets.only(bottom: 10),
+            elevation: 5,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0)),
+            content: Container(
+                width: 500,
+                child: ChangeImageBase(storageReference: "Home/Categories/Added",documentReference: widget.documentReference)),
+          );
+        });
+  }
+
   void getItem() async{
     var document = await widget.documentReference.get();
     setState(() {
       item = document;
     });
   }
+
+
 }

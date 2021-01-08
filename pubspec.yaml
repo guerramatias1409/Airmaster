@@ -33,6 +33,12 @@ dependencies:
   material_design_icons_flutter: 4.0.5755
   provider: ^4.3.2+3
   google_fonts: ^1.1.1
+  image_picker_web: ^1.0.9
+  mime_type: ^0.3.2
+  platform_alert_dialog:
+    git:
+      url: https://github.com/LucasTejero/platform_alert_dialog
+      ref: Fix_Web_MacOS
 
 dev_dependencies:
   flutter_test:
