@@ -131,7 +131,7 @@ class ChangeImageMobileView extends View<ChangeImageController>{
                         size: 20,
                       ),
                       label: Text(
-                        "Send Image",
+                        "Edit Image",
                         style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold),
