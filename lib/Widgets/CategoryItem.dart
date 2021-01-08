@@ -147,6 +147,7 @@ class _CategoryItemState extends State<CategoryItem> {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0)),
             content: Container(
+              padding: EdgeInsets.all(8),
                 width: 500,
                 child: ChangeImageBase(storageReference: "Home/Categories/Added",documentReference: widget.documentReference)),
           );

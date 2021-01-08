@@ -49,6 +49,7 @@ class MainPictureController extends ChangeNotifier {
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0)),
             content: Container(
+              padding: EdgeInsets.all(8),
                 width: 500,
                 child: ChangeImageBase(storageReference: "Home/MainPicture/Added",documentReference: reference)),
           );
