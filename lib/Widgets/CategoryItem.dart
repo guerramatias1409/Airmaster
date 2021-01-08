@@ -118,8 +118,8 @@ class _CategoryItemState extends State<CategoryItem> {
     );
   }
 
-  void openEditPopUp(String field) {
-    showDialog(
+  void openEditPopUp(String field) async{
+    await showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
@@ -133,11 +133,12 @@ class _CategoryItemState extends State<CategoryItem> {
                 child: Center(child: EditTextPopUp(widget.documentReference, field))),
           );
         });
+    getItem();
   }
 
 
-  void openChangeImagePopUp() {
-    showDialog(
+  void openChangeImagePopUp() async{
+    await showDialog(
         context: context,
         builder: (context) {
           return AlertDialog(
@@ -150,9 +151,11 @@ class _CategoryItemState extends State<CategoryItem> {
                 child: ChangeImageBase(storageReference: "Home/Categories/Added",documentReference: widget.documentReference)),
           );
         });
+    getItem();
   }
 
   void getItem() async{
+    print("get item");
     var document = await widget.documentReference.get();
     setState(() {
       item = document;

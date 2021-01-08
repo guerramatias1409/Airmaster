@@ -1,3 +1,4 @@
+import 'package:airmaster/Controllers/HomeCategoriesController.dart';
 import 'package:airmaster/Controllers/MainPictureController.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -16,12 +17,14 @@ class ChangeImageController extends ChangeNotifier {
   String locationReference;
   DocumentReference documentReference;
   MainPictureController mainPictureController;
+  HomeCategoriesController homeCategoriesController;
 
   void init(String _reference, DocumentReference _docRef, BuildContext _context) {
     selectedImage = null;
     locationReference = _reference;
     documentReference = _docRef;
     mainPictureController = Provider.of<MainPictureController>(_context, listen: false);
+    homeCategoriesController = Provider.of<HomeCategoriesController>(_context, listen: false);
   }
 
   Future getImage() {
@@ -47,10 +50,8 @@ Future sendImageWeb(BuildContext _context) async {
       uploadTask.future.then((snapshot) => {
             snapshot.ref.getDownloadURL().then((downloadUrl) async {
               if (downloadUrl != null) {
-                  print("EDIT PICTURE");
                   var reference = documentReference;
                   await reference.update({"ImageUrl": downloadUrl.toString()});
-                  print("FINISH EDIT");
                   Navigator.of(_context).pop();
                   mainPictureController.notify();
               } else {

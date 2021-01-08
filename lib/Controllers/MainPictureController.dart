@@ -21,8 +21,8 @@ class MainPictureController extends ChangeNotifier {
     notifyListeners();
   }
 
-  void openEditPopUp(String field, BuildContext _context) {
-    showDialog(
+  void openEditPopUp(String field, BuildContext _context) async{
+    await showDialog(
         context: _context,
         builder: (context) {
           return AlertDialog(
@@ -36,6 +36,7 @@ class MainPictureController extends ChangeNotifier {
                 child: Center(child: EditTextPopUp(reference, field))),
           );
         });
+    notify();
   }
 
   void openChangeImagePopUp(BuildContext _context) {

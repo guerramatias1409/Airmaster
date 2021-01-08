@@ -77,9 +77,8 @@ class _EditTextPopUpState extends State<EditTextPopUp> {
   }
 
   void editText() async{
-    print("EDIT TEXT");
     var reference = widget.documentReference;
     await reference.update({widget.field: textController.text});
-    print("FINISH EDIT");
+    Navigator.of(context).pop();
   }
 }
