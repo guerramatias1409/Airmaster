@@ -23,7 +23,7 @@ class ChangeImageBaseState extends State<ChangeImageBase>{
   Widget build(BuildContext context) {
     return BaseWidget<ChangeImageController>(
       onControllerReady: (controller) =>
-          controller.init(widget.storageReference, widget.documentReference),
+          controller.init(widget.storageReference, widget.documentReference, context),
       child: PlatformLayout(
         mobile: ChangeImageMobileView(),
         web: ScreenTypeLayout(

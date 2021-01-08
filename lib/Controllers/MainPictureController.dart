@@ -54,5 +54,10 @@ class MainPictureController extends ChangeNotifier {
         });
   }
 
+  void notify() {
+    getItem();
+    notifyListeners();
+  }
+
 
 }

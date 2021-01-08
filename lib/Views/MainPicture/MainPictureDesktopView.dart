@@ -41,9 +41,9 @@ class MainPictureDesktopView extends View<MainPictureController>{
                     child: Text(
                       controller.item.data()["Title1"],
                       style: TextStyle(
-                          fontSize: 54,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w100,
+                        fontSize: 54,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w100,
                       ),
                     ),
                   ),
@@ -80,7 +80,7 @@ class MainPictureDesktopView extends View<MainPictureController>{
                         fontSize: 26,
                         color: Colors.white,
                         fontWeight: FontWeight.w100,
-                      height: 1
+                        height: 1
                     ),
                   ),
                 ),

@@ -34,10 +34,10 @@ class MainPictureMobileView extends View<MainPictureController>{
                 children: [
                   GestureDetector(
                     onTap: (){
-                    if(controller.homeController.isEditMode){
-                      controller.openEditPopUp("Title1", context);
-                    }
-                  },
+                      if(controller.homeController.isEditMode){
+                        controller.openEditPopUp("Title1", context);
+                      }
+                    },
                     child: Text(
                       controller.item.data()["Title1"],
                       style: TextStyle(
@@ -49,9 +49,9 @@ class MainPictureMobileView extends View<MainPictureController>{
                   ),
                   GestureDetector(
                     onTap: (){
-                    if(controller.homeController.isEditMode){
-                    controller.openEditPopUp("Title2", context);
-                    }
+                      if(controller.homeController.isEditMode){
+                        controller.openEditPopUp("Title2", context);
+                      }
                     },
                     child: Text(
                       controller.item.data()["Title2"],
