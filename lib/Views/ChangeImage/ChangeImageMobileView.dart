@@ -43,6 +43,96 @@ class ChangeImageMobileView extends View<ChangeImageController>{
             ],
           ),
         ),
+        SizedBox(height: 10),
+        controller.selectedImage == null ?
+        Wrap(
+          spacing: 5,
+          runSpacing: 5,
+          children: [
+            InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
+              onTap: (){
+                controller.selectImage(controller.mainPictureUrl, context);
+              },
+              child: Container(
+                  height: 80,
+                  width: 80,
+                  decoration: new BoxDecoration(
+                      image: new DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(controller.mainPictureUrl),
+                      ))),
+            ),
+            InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
+              onTap: (){
+                controller.selectImage(controller.categoryWindowUrl, context);
+              },
+              child: Container(
+                  height: 80,
+                  width: 80,
+                  decoration: new BoxDecoration(
+                      image: new DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(controller.categoryWindowUrl),
+                      ))),
+            ),
+            InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
+              onTap: (){
+                controller.selectImage(controller.categoryDoorUrl, context);
+              },
+              child: Container(
+                  height: 80,
+                  width: 80,
+                  decoration: new BoxDecoration(
+                      image: new DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(controller.categoryDoorUrl),
+                      ))),
+            ),
+            InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
+              onTap: (){
+                controller.selectImage(controller.categoryRailingUrl, context);
+              },
+              child: Container(
+                  height: 80,
+                  width: 80,
+                  decoration: new BoxDecoration(
+                      image: new DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(controller.categoryRailingUrl),
+                      ))),
+            ),
+            InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
+              onTap: (){
+                controller.selectImage(controller.categoryShowerUrl, context);
+              },
+              child: Container(
+                  height: 80,
+                  width: 80,
+                  decoration: new BoxDecoration(
+                      image: new DecorationImage(
+                        fit: BoxFit.cover,
+                        image: NetworkImage(controller.categoryShowerUrl),
+                      ))),
+            )
+          ],
+        ) :
+        Container(),
+        SizedBox(height: 10),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           child: Column(

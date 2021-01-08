@@ -18,6 +18,16 @@ class ChangeImageController extends ChangeNotifier {
   DocumentReference documentReference;
   MainPictureController mainPictureController;
   HomeCategoriesController homeCategoriesController;
+  String mainPictureUrl =
+      "https://firebasestorage.googleapis.com/v0/b/airmaster-e2ded.appspot.com/o/Home%2FMainPicture%2Fmainpicture.jpg?alt=media&token=77d2a6b1-1a44-483a-ad2b-7790bd2e125d";
+  String categoryWindowUrl =
+      "https://firebasestorage.googleapis.com/v0/b/airmaster-e2ded.appspot.com/o/Home%2FCategories%2FCategoryWindows.jpg?alt=media&token=2e008a2c-7a76-4913-98d4-4c62d62ce233";
+  String categoryDoorUrl =
+      "https://firebasestorage.googleapis.com/v0/b/airmaster-e2ded.appspot.com/o/Home%2FCategories%2FCategoryDoors.jpg?alt=media&token=273842b7-ced3-478e-bdf4-46d304a4ee09";
+  String categoryRailingUrl =
+      "https://firebasestorage.googleapis.com/v0/b/airmaster-e2ded.appspot.com/o/Home%2FCategories%2FCategoryRailings.jpg?alt=media&token=09929b0b-d2b5-4110-9e7a-43015ad81f2d";
+  String categoryShowerUrl =
+      "https://firebasestorage.googleapis.com/v0/b/airmaster-e2ded.appspot.com/o/Home%2FCategories%2FCategoryShowers.jpg?alt=media&token=64769089-0fd4-4511-ac45-676287964ed6";
 
   void init(String _reference, DocumentReference _docRef, BuildContext _context) {
     selectedImage = null;
@@ -90,6 +100,13 @@ Future sendImageWeb(BuildContext _context) async {
         );
       },
     );
+  }
+
+  void selectImage(String imageUrl, BuildContext _context) async{
+    var reference = documentReference;
+    await reference.update({"ImageUrl": imageUrl.toString()});
+    Navigator.of(_context).pop();
+    mainPictureController.notify();
   }
 
 }
