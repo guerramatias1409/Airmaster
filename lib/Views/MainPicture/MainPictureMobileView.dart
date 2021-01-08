@@ -11,11 +11,18 @@ class MainPictureMobileView extends View<MainPictureController>{
     : Stack(
       alignment: AlignmentDirectional.centerStart,
       children: [
-        Container(
-            height: 250,
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    fit: BoxFit.cover, image: NetworkImage(controller.item.data()["ImageUrl"])))
+        GestureDetector(
+          onTap: (){
+            if(controller.homeController.isEditMode){
+              controller.openChangeImagePopUp(context);
+            }
+          },
+          child: Container(
+              height: 250,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.cover, image: NetworkImage(controller.item.data()["ImageUrl"])))
+          ),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 20),
