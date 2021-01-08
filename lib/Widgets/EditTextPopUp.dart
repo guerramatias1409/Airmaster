@@ -18,14 +18,43 @@ class _EditTextPopUpState extends State<EditTextPopUp> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Wrap(
+        alignment: WrapAlignment.center,
         children: [
-          Text(
-            "INSERT TEXT",
-            style: TextStyle(fontSize: 14),
-            textAlign: TextAlign.center,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                      child: Icon(
+                        Icons.close,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  width: 510,
+                  child: Text(
+                    "EDIT TEXT",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0),
