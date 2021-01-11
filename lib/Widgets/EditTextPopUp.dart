@@ -67,7 +67,6 @@ class _EditTextPopUpState extends State<EditTextPopUp> {
                   width: 100,
                   child: TextFormField(
                     textAlign: TextAlign.center,
-                    keyboardType: TextInputType.number,
                     controller: textController,
                     maxLines: 1
                   ),
